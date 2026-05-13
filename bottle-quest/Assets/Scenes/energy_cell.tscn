@@ -1,0 +1,24 @@
+[gd_scene load_steps=5 format=3 uid="uid://dyu8s7er48fde"]
+
+[ext_resource type="Texture2D" uid="uid://bmwcakyripy3v" path="res://Assets/Sprites/energy_cell.png" id="1_caw13"]
+[ext_resource type="Script" path="res://Assets/Scripts/energy_cell.gd" id="1_mn45u"]
+[ext_resource type="AudioStream" uid="uid://cps3pimq7v8it" path="res://Assets/Sounds/can sound.mp3" id="3_g0stm"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_dynsa"]
+size = Vector2(8, 12)
+
+[node name="EnergyCell" type="Area2D"]
+script = ExtResource("1_mn45u")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_caw13")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_dynsa")
+
+[node name="PickupSound" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("3_g0stm")
+volume_db = -5.0
+pitch_scale = 2.0
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

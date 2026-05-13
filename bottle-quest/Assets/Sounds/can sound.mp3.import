@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://cps3pimq7v8it"
+path="res://.godot/imported/can sound.mp3-24db9d5d35e770b2aceb74e1291d2ce3.mp3str"
+
+[deps]
+
+source_file="res://Assets/Sounds/can sound.mp3"
+dest_files=["res://.godot/imported/can sound.mp3-24db9d5d35e770b2aceb74e1291d2ce3.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
