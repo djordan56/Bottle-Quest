@@ -5,7 +5,8 @@ The player explores different areas, collects energy cells and moves through lev
 
 Controls
 Action	Key
-Move Left	A 
-Move Right	D
-Jump	Spacebar
-Start Game	Enter / Mouse Click
+(Move Left	A) 
+(Move Right	D)
+(Move Down  S)
+(Jump	Spacebar)
+(Start Game	Enter / Mouse Click}
